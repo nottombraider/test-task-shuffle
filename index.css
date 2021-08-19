@@ -7,6 +7,18 @@
   --button-color: #ffaa01;
   --button-text-color: #fff;
   --button-angles: 5px;
+  --card-bg: #fff;
+  --card-border-color: #e6e7e7;
+  --card-angles: 3px;
+  --icon-bg-blue: #bbdefc;
+  --icon-blue: #1e88e5;
+  --icon-bg-green: #c7e6c9;
+  --icon-green: #46a149;
+  --icon-bg-yellow: #fff9c4;
+  --icon-yellow: #f8a829;
+  --icon-bg-violet: #e1bee8;
+  --icon-violet: #8d24ab;
+  --icon-angles: 5px;
 }
 
 body {
@@ -16,17 +28,30 @@ body {
   color: var(--text-color);
 }
 
-.main-container {
-  height: 100vh;
+p {
+  margin: 0;
+}
+
+.container {
   padding: 0 4rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background-image: linear-gradient(
     to bottom right,
     var(--bg-top-color),
     var(--bg-bottom-color)
   );
+}
+
+.main-container {
+  width: 84rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.description-container {
+  max-width: 33rem;
+  margin-right: 5rem;
+  overflow: hidden;
 }
 
 .title {
@@ -47,7 +72,7 @@ body {
 
 .main-title {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 3.5rem;
   padding-top: 0.6rem;
 }
@@ -61,6 +86,61 @@ body {
   padding: 0.7rem 1rem;
   color: var(--button-text-color);
   background-color: var(--button-color);
-  border: 1px solid;
+  border: 1px solid var(--button-color);
   border-radius: var(--button-angles);
+}
+
+.cards-container {
+  height: 35rem;
+  column-count: 2;
+  column-gap: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 15rem;
+  height: 12.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-angles);
+}
+
+.icon-container {
+  align-self: flex-start;
+  padding: 0.6rem 0.6rem 0.3rem;
+  border-radius: var(--icon-angles);
+}
+
+.icon-blue {
+  color: var(--icon-blue);
+  background-color: var(--icon-bg-blue);
+}
+
+.icon-green {
+  color: var(--icon-green);
+  background-color: var(--icon-bg-green);
+}
+
+.icon-yellow {
+  color: var(--icon-yellow);
+  background-color: var(--icon-bg-yellow);
+}
+
+.icon-violet {
+  color: var(--icon-violet);
+  background-color: var(--icon-bg-violet);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
 }
