@@ -1,0 +1,19 @@
+:root {
+  --bg-top-color: #eaebf7;
+  --bg-bottom-color: #fff;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--bg-top-color),
+    var(--bg-bottom-color)
+  );
+}
