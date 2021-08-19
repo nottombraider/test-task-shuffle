@@ -44,6 +44,7 @@ p {
 .main-container {
   width: 84rem;
   height: 100vh;
+  margin: auto;
   display: flex;
   align-items: center;
 }
